@@ -1,4 +1,4 @@
-This is a rotation function for 3D tensor/array data. Based on torchvision.transforms.functional.rotate, it can rotate the data quickly on GPU/CPU. When the tensor is large, try to use GPU to accelerate the rotation operation.
+This is a rotation function for 3D tensor/array data, which may be useful for 3d registration or 3d data enhancement. Based on torchvision.transforms.functional.rotate, it can rotate the data quickly on GPU/CPU. When the tensor is large, try to use GPU to accelerate the rotation operation..
 
 # Requirement
 - torchvision >= 0.9.1
