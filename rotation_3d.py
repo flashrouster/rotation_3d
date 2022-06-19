@@ -7,7 +7,7 @@ from torchvision.transforms import InterpolationMode
 def rotation_3d(X, axis, theta, expand=False, fill=0.0):
     """
     The rotation is based on torchvision.transforms.functional.rotate, which is originally made for a 2d image rotation
-    :param X: the data that should be rotated, a torch.tensor or an ndarray
+    :param X: the data that should be rotated, a torch.tensor or an ndarray, with lenx * leny * lenz shape.
     :param axis: the rotation axis based on the keynote request. 0 for x axis, 1 for y axis, and 2 for z axis.
     :param expand:  (bool, optional) – Optional expansion flag. If true, expands the output image to make it large enough to hold the entire rotated image. If false or omitted, make the output image the same size as the input image. Note that the expand flag assumes rotation around the center and no translation.
     :param fill:  (sequence or number, optional) –Pixel fill value for the area outside the transformed image. If given a number, the value is used for all bands respectively.
